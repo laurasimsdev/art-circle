@@ -8,7 +8,7 @@ An Online Community for Artists
 
 ## Introduction
 
-This ArtCircle app is built using the MVC Architecture. This full stack application has authentication to enable each user to login and have a personalized experience. The user will be able to upload artwork to share with the community, and to give an receive feedback and comments on the artwork.
+This ArtCircle app is built using the MVC Architecture. This full stack application has authentication to enable each user to login and have a personalized experience. The user will be able to upload artwork to share with the community, and to give and receive feedback on the artwork.
 
 ---
 
