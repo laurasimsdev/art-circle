@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artists' Circle</title>
+    <title>ArtCircle</title>
     <link
       rel="icon"
       type="image/png"
@@ -23,15 +23,23 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     
-    <header class="container">
-      <div class="text-center">
-        <h1 class=""><a href="/profile">Art Circle</a></h1>
-        <span>An Online Community for Artists</span>
+    <nav>
+      <div>
+        <a href="/"><h2>ART<span class="green-text">CIRCLE</span></h2></a>
+        <h5>An Online Community for Artists</h5>
       </div>
-    </header>
-  </body>
-</html>
+      <ul>
+        <a href=""><li>About</li></a>
+        <a href="/feed"><li>Gallery</li></a>
+        <a href="/profile"><li>Profile</li></a>
+        <a href="/logout"><li class="green-text"><strong>Sign out</strong></li></a>
+      </ul>
+    </nav>
+

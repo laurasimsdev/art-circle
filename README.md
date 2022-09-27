@@ -1,7 +1,3 @@
-# Install
+# Art Circle
 
-`npm install`
-
-# Run
-
-`npm start`
+An Online Community for Artists
