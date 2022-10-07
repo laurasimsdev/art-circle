@@ -42,6 +42,30 @@ span:hover {
   padding: 0%;
 }
 
+.background-image-3 {
+  background-image: url("../photos/artist.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0%;
+}
+
+.blog-header {
+  background-color: rgb(48, 48, 48);
+  color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.blog-welcome {
+  font-style: italic;
+  text-align: center;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -95,4 +119,17 @@ footer {
 
 .padding {
   height: 30px;
+}
+
+@media only screen and (max-width: 675px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 }
