@@ -32,6 +32,16 @@ span:hover {
   padding: 0%;
 }
 
+.background-image-2 {
+  background-image: url("../photos/painter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0%;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -75,10 +85,10 @@ h5 {
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 26px;
   background-color: rgb(233, 233, 233);
   text-align: center;
-  padding: 10px;
+  padding-top: 3px;
   position: fixed;
   bottom: 0;
 }
