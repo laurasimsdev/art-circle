@@ -137,6 +137,10 @@ span:hover {
   font-style: italic;
 }
 
+.welcome-title {
+  text-align: center;
+}
+
 .selected-artwork {
   width: 80%;
   margin: 0 auto;
