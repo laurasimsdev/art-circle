@@ -1,56 +1,51 @@
 <%- include('partials/header') -%>
 <div class="container">
-  <div>
-    <div>
-      <h2 class="artwork-selected-title">Selected Artwork</h2>
-      <h3>Title: <%= post.title %></h3>
-      <h4>Caption: <%= post.caption %></h4>
-      <img class="img-fluid" src="<%= post.image%>" />
-      <div class="artist-likes">
-        <h4>Likes: <%= post.likes %></h4>
-        <!-- <h5>Artist: <%= userName %></h5> -->
-      </div>
-
-      <div class="row justify-content-between">
-        <form
-          class="col-10"
-          action="/post/likePost/<%= post.id %>?_method=PUT"
-          method="POST"
-        >
-          <button class="btn btn-success fa fa-heart" type="submit"></button>
+  <div class="selected-artwork">
+    <h2 class="artwork-selected-title">Selected Artwork</h2>
+    <h3>Title: <%= post.title %></h3>
+    <h4>Caption: <%= post.caption %></h4>
+    <img class="img-fluid" src="<%= post.image%>" />
+    <div class="artist-likes">
+      <h4>Likes: <%= post.likes %></h4>
+      <h5>Artist: <%= postUserName %></h5>
+    </div>
+    <div class="row justify-content-between">
+      <form
+        class="col-10"
+        action="/post/likePost/<%= post.id %>?_method=PUT"
+        method="POST"
+      >
+        <button class="btn btn-success fa fa-heart" type="submit"></button>
+      </form>
+      <%if(post.user == user.id){ %>
+      <form
+        action="/post/deletePost/<%= post.id %>?_method=DELETE"
+        method="POST"
+        class="col"
+      >
+        <button class="btn btn-success fa fa-trash" type="submit"></button>
+      </form>
+      <%}%>
+      <div class="comment-section">
+        <h3>Feedback:</h3>
+        <ul class="comment-list">
+          <% for(var i=0; i<comment.length; i++) {%>
+            <li class="comments">&#x2022; 
+              <%= comment[i].comment%>
+            </li>
+          <% } %>
+        </ul>
+        <form action="/post/createComment/<%= post.id %>?_method=POST" enctype="multipart/ form-data" method="POST">
+          <div class="mb-3">
+            <label for="comment" class="form-label add-comment-label">Add Feedback:</label>
+            <textarea class="form-control" id="comment" name="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success" value="submit">Submit</button>
         </form>
-        <%if(post.user == user.id){ %>
-        <form
-          action="/post/deletePost/<%= post.id %>?_method=DELETE"
-          method="POST"
-          class="col"
-        >
-          <button class="btn btn-success fa fa-trash" type="submit"></button>
-        </form>
-        <%}%>
-
-        <div class="comment-section">
-          <h3>Feedback:</h3>
-          <ul class="comment-list">
-            <% for(var i=0; i<comment.length; i++) {%>
-              <li class="comments">&#x2022; 
-                <%= comment[i].comment%>
-              </li>
-            <% } %>
-          </ul>
-
-          <form action="/post/createComment/<%= post.id %>?_method=POST" enctype="multipart/ form-data" method="POST">
-            <div class="mb-3">
-              <label for="comment" class="form-label add-comment-label">Add Feedback:</label>
-              <textarea class="form-control" id="comment" name="comment"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success" value="submit">Submit</button>
-          </form>
-        </div>
       </div>
     </div>
-    <div class="padding"></div>
   </div>
+  <div class="padding"></div>
 </div>
 
 <%- include('partials/footer') -%>

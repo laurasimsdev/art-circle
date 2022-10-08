@@ -89,7 +89,8 @@ span:hover {
 }
 
 .gallery-items {
-  width: 95%;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .submit-artwork {
@@ -134,8 +135,18 @@ span:hover {
   font-style: italic;
 }
 
+.selected-artwork {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .padding {
   height: 30px;
+}
+
+.gallery {
+  padding-top: 20px;
+  text-align: center;
 }
 
 ul {
