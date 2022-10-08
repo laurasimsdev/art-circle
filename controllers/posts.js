@@ -24,8 +24,8 @@ module.exports = {
     try {
       const post = await Post.findById(req.params.id);
       const comment = await Comment.find({ postId: req.params.id }); //added
-      const userName = await User.find({ _id: post.user });
-      res.render("post.ejs", { post: post, user: req.user, comment: comment, userName: userName });
+      const userName = await User.find({ _id: post.user }); //added
+      res.render("post.ejs", { post: post, user: req.user, comment: comment, userName });
     } catch (err) {
       console.log(err);
     }
