@@ -1,7 +1,10 @@
 <%- include('partials/header') -%>
-    <main class="container">
+  <div class="background-image">
+    <div class="white-box">
+      <main class="container">
         <div class="row justify-content-center">
-            <section class="col-6 mt-5">
+          <h2>Create an Account</h2>
+            <section class="register">
                 <% if (locals.messages.errors) { %>
                     <% messages.errors.forEach( el => { %>
                         <div class="alert alert-danger"><%= el.msg %></div>
@@ -20,7 +23,7 @@
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <div id="emailHelp" class="form-text"></div>
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label">Password</label>
@@ -30,10 +33,11 @@
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                   </form>
             </section>
         </div>
-    </main>
-
+      </main>
+    </div>
+  </div>
 <%- include('partials/footer') -%>

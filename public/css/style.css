@@ -22,12 +22,24 @@ span:hover {
   color: black;
 }
 
+.white-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
 .background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../photos/paint.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
+  min-height: 90vh;
   margin: 0 auto;
   padding: 0%;
 }
@@ -59,11 +71,52 @@ span:hover {
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .blog-welcome {
   font-style: italic;
   text-align: center;
+}
+
+.author {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  padding-top: 30px;
+}
+
+.gallery-items {
+  width: 95%;
+}
+
+.submit-artwork {
+  margin-bottom: 30px;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comments {
+  font-style: italic;
+}
+
+.artwork-selected-title {
+  margin-bottom: 15px;
+}
+
+.artist-likes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-comment-label {
+  margin-top: 20px;
 }
 
 ul {
@@ -88,6 +141,10 @@ h2 {
   font-size: 35px;
   padding: 0;
   margin: 0;
+}
+
+h4 {
+  font-size: 15px;
 }
 
 h5 {
