@@ -2,11 +2,11 @@
   <div class="container">
     <div class="gallery">
       <h1>The Community Gallery</h1>
-      <ul class="row list-unstyled">
+      <ul class="row">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="gallery-items">
             <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
+              <img class="img-fluid gallery-art" src="<%= posts[i].image%>">
             </a>
           </li>
         <% } %>
