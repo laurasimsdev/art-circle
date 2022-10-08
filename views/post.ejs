@@ -29,9 +29,19 @@
       <div class="comment-section">
         <h3>Feedback:</h3>
         <ul class="comment-list">
+          <!-- Add username and delete button -->
           <% for(var i=0; i<comment.length; i++) {%>
-            <li class="comments">&#x2022; 
-              <%= comment[i].comment%>
+            <li class="comments">
+              &#x2022; "<%= comment[i].comment%>" - <%= comment[i].madeByName%>
+              <%if(user.id == comment[i].madeBy){ %>
+                <form
+                  action="/post/deleteComment/<%= post.id %>/<%= comment[i].id %>?_method=DELETE"
+                  method="POST"
+                  class="col"
+                >
+                  <button class="btn btn-secondary fa fa-trash" type="submit"></button>
+                </form>
+                <%}%>
             </li>
           <% } %>
         </ul>

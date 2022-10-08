@@ -105,6 +105,8 @@ span:hover {
 
 .comments {
   font-style: italic;
+  display: flex;
+  gap: 10px;
 }
 
 .artwork-selected-title {

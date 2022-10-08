@@ -93,4 +93,13 @@ module.exports = {
       res.redirect("/profile");
     }
   },
+  deleteComment: async (req, res) => {
+    try {
+      await Comment.deleteOne({ _id: req.params.commentId });
+      console.log("Deleted Comment");
+      res.redirect(`/post/${req.params.postId}`);
+    } catch (err) {
+      res.redirect(`/post/${req.params.postId}`);
+    }
+  },
 };
