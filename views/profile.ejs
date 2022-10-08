@@ -1,15 +1,13 @@
 <%- include('partials/header') -%>
 <div class="container">
-  <div class="row mt-5">
+  <div class="row mt-5 add-artwork"">
     <h2>Your Personal Artist Profile</h2>
-      <div class="col-6">
+      <div>
           <div>
               <p class="welcome-text">Welcome <%= user.userName %>!</p>
-              <!-- <p><strong>Email</strong>: <%= user.email %></p> -->
-              <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
           </div>
           <div>
-            <h3>Add artwork</h3>
+            <h3>Add Artwork</h3>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
                   <label for="title" class="form-label">Title</label>

@@ -8,7 +8,7 @@
       <img class="img-fluid" src="<%= post.image%>" />
       <div class="artist-likes">
         <h4>Likes: <%= post.likes %></h4>
-        <!-- <h5>Artist: <%= user.userName %></h5> -->
+        <h5>Artist: <%= post.user %></h5>
       </div>
 
       <div class="row justify-content-between">
@@ -30,7 +30,7 @@
         <%}%>
 
         <div class="comment-section">
-          <h3>Comments:</h3>
+          <h3>Feedback:</h3>
           <ul class="comment-list">
             <% for(var i=0; i<comment.length; i++) {%>
               <li class="comments">&#x2022; 
@@ -41,7 +41,7 @@
 
           <form action="/post/createComment/<%= post.id %>?_method=POST" enctype="multipart/ form-data" method="POST">
             <div class="mb-3">
-              <label for="comment" class="form-label add-comment-label">Add a Comment:</label>
+              <label for="comment" class="form-label add-comment-label">Add Feedback:</label>
               <textarea class="form-control" id="comment" name="comment"></textarea>
             </div>
             <button type="submit" class="btn btn-success" value="submit">Submit</button>
