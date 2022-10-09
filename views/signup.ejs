@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
   <div class="background-image">
-    <div class="white-box">
+    <div class="white-box" id="register-box">
       <main class="container">
         <div class="row justify-content-center">
           <h2>Create an Account</h2>
@@ -33,7 +33,7 @@
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <p class="create-account-submit"><button type="submit" class="btn btn-success">Submit</button><span>Already have an account? <a href="/login" class="login-link">LOG IN</a></span></p>
                   </form>
             </section>
         </div>

@@ -7,6 +7,7 @@
           <li class="gallery-items">
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid gallery-art" src="<%= posts[i].image%>">
+              <h5><%= posts[i].title%> by <%= posts[i].postUserName%></h5>
             </a>
           </li>
         <% } %>

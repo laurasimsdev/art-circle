@@ -29,6 +29,7 @@ span:hover {
   width: 80%;
   max-width: 600px;
   border-radius: 5px;
+  transform: translateY(-30%);
 }
 
 .background-image {
@@ -153,6 +154,7 @@ span:hover {
 
 .gallery {
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -169,6 +171,21 @@ span:hover {
 .profile-art {
   width: 80%;
   margin: 0 auto;
+}
+
+.create-account-submit,
+.login-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-link {
+  color: green;
+}
+
+#register-box {
+  transform: translateY(15px);
 }
 
 ul {
