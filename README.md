@@ -3,7 +3,7 @@
 An Online Community for Artists
 
 <a href="https://art-circle-community.herokuapp.com"><img src="https://github.com/laurasimsdev/laurasimsdev/raw/main/img/image4.png" /></a>
-
+<a href="https://art-circle-community.herokuapp.com" target="_blank">Site link</a>
 ---
 
 ## Introduction
