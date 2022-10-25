@@ -50,8 +50,8 @@ span:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
   margin: 0 auto;
+  height: 75vh;
   padding: 0%;
 }
 
